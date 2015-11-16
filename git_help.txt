@@ -1,0 +1,16 @@
+man git
+man gittutorial
+
+git clone https://github.com/vasily122/report
+git add .
+git branch ping_optimiser
+git branch
+git checkout  ping_optimiser
+nano report.py
+python report.py
+git commit -m "ping optimised in 1 line 0.1" 
+git commit -a
+git checkout  master
+git merge  ping_optimiser
+git checkout  master
+git push https://github.com/vasily122/report
