@@ -1,0 +1,21 @@
+well, to simply get them up and running, assuming those machines don't have GPUs (servers usually don't), install Debian (or Ubuntu) on them, then log in as root and do the following:
+
+apt-get install boinc-client   
+
+(type "y" when asked)
+
+
+==vasily122 key
+boinccmd --project_attach http://setiathome.berkeley.edu 9396153_3b17d960dc199392fc274a43b8800a68
+db3c0dd66bc046782e6952007d2ea62f
+where "account_key" is your account key you get from the corresponding webpage of your seti@home account. Use the WEAK account key, not the main account key!
+To make this clear, don't type "account_key", or things possibly screw up. Type the key from your seti@home account page instead
+
+and then
+
+service boinc-client restart
+
+
+and there you go, all CPUs start crunching at 100% after the initial boinc benchmarks.
+
+I don't know Ubuntu that well, but the Debian installer is pretty simple. At the end of the setup process it will ask you what software to install. All you need is basic tools. I'd recommend to install ssh-server, too, so you can use the program "putty" or the like to log in via network.
