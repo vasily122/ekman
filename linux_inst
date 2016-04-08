@@ -1,0 +1,80 @@
+ifconfig
+sudo apt-get install mc
+
+cd Загрузки
+sudo dpkg -i Yandex.deb
+sudo apt-get install -f
+
+crontab -e
+chmod a+x *.*
+
+sudo apt-get install p7zip-full mc rar unace unrar arj zip unzip ubuntu-restricted-extras pavucontrol libavcodec-extra
+sudo apt-get install boinc-client boinc-manager make gcc build-essential
+sudo apt-get install wine winetricks djview4  photoprint fslint gprename msttcorefonts vlc  xscreensaver*
+
+sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" >> /etc/apt/sources.list.d/virtualbox.list'
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+cd Загрузки
+wget http://download.virtualbox.org/virtualbox/5.0.16/virtualbox-5.0_5.0.16-105871~Ubuntu~wily_amd64.deb
+sudo apt-get install libqt4-opengl libqtcore4 libqtgui4
+sudo apt-get -f install
+sudo dpkg -i virtualbox-5.0_5.0.16-105871~Ubuntu~wily_amd64.deb 
+
+sudo apt-get update
+sudo apt-get install libreoffice-style-*
+
+sudo apt-get install mailutils mutt exim4
+sudo dpkg-reconfigure exim4-config
+# select: mail direct from web-site
+echo "test from new host"| mail -s "2016 mar 8 test 4" vasily122@yandex.ru
+
+sudo apt-get install git
+git config --global user.email "vasily122@yandex.ru"
+git config --global user.name "vasily122"
+====================================================================
+sudo apt-get install p7zip-full mc rar unace unrar arj zip unzip ubuntu-restricted-extras pavucontrol libavcodec-extra
+sudo apt-get install wine winetricks djview4  photoprint fslint gprename msttcorefonts vlc xscreensaver-gl-extra xscreensaver*
+  
+
+sudo apt-get install gstreamer0.10-plugins-ugly libxine1-ffmpeg gxine libdvdread4 totem-mozilla icedax tagtool easytag id3tool
+sudo apt-get install lame nautilus-script-audio-convert libmad0 mpg321 libavcodec-extra 
+
+wget http://download.documentfoundation.org/libreoffice/stable/5.0.2/deb/x86_64/LibreOffice_5.0.2_Linux_x86-64_deb_langpack_ru.tar.gz
+wget http://download.documentfoundation.org/libreoffice/stable/5.0.2/deb/x86_64/LibreOffice_5.0.2_Linux_x86-64_deb_helppack_ru.tar.gz
+
+sudo add-apt-repository ppa:mc3man/trusty-media
+sudo apt-get update
+wget http://download.documentfoundation.org/libreoffice/stable/5.0.2/deb/x86_64/LibreOffice_5.0.2_Linux_x86-64_deb.tar.gz
+
+sudo apt-get install make gcc build-essential
+sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" >> /etc/apt/sources.list.d/virtualbox.list'
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+sudo apt-get update
+wget http://download.virtualbox.org/virtualbox/5.0.8/virtualbox-5.0_5.0.8-103449~Ubuntu~trusty_amd64.deb
+sudo dpkg -i virtualbox-5.0_5.0.8-103449~Ubuntu~trusty_amd64.deb 
+
+sudo apt-get install libreoffice-style-*
+
+sudo apt-get install pepperflashplugin-nonfree
+sudo update-pepperflashplugin-nonfree --install
+sudo add-apt-repository ppa:mc3man/trusty-media
+sudo apt-get update 
+sudo apt-get install gstreamer0.10-ffmpeg qupzilla lubuntu-artwork sharutils uudeview mpack  cabextract
+
+sudo apt-get install xubuntu-desktop
+sudo apt-get install anjuta code::blocks geany qrencode zbar-tools ubuntu-tweak
+
+sudo apt-get -f install python-pyside python-bs4 python-usb
+sudo dpkg -i pinguino-ide.deb 
+
+sudo apt-add-repository ppa:djcj/screenfetch
+sudo apt-get update
+sudo apt-get install screenfetch
+
+sudo apt-add-repository -y ppa:teejee2008/ppa && sudo apt-get update && sudo apt-get install conky conky-manager
+sudo apt-get install conky-all lm-sensors hddtemp
+
+
+sudo aptitude install boinc-client boinc-manager 
+
+sudo sed -i "s/enabled=1/enabled=0/g" '/etc/default/apport'
