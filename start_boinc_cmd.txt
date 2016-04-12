@@ -4,3 +4,10 @@ apt-get -y install boinc-app-seti boinc-client
 update-rc.d boinc-client defaults 98
 boinccmd --project_attach http://setiathome.berkeley.edu 9396153_3b17d960dc199392fc274a43b8800a68
 service boinc-client restart
+
+account_setiathome.berkeley.edu.xml =>
+
+<account>
+    <master_url>http://setiathome.berkeley.edu/</master_url>
+    <authenticator>9396153_3b17d960dc199392fc274a43b8800a68</authenticator>
+</account>
