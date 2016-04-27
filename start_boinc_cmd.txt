@@ -1,13 +1,13 @@
-apt-get update && apt-get -y upgrade
-apt-get -y install boinc-app-seti boinc-client
+sudo apt-get install boinc-client
 /etc/init.d/boinc-client start
-update-rc.d boinc-client defaults 98
-boinccmd --project_attach http://setiathome.berkeley.edu 9396153_3b17d960dc199392fc274a43b8800a68
-service boinc-client restart
-
-account_setiathome.berkeley.edu.xml => в каталоге данных BOINC
-
-<account>
-    <master_url>http://setiathome.berkeley.edu/</master_url>
-    <authenticator>9396153_3b17d960dc199392fc274a43b8800a68</authenticator>
-</account>
+sudo /etc/init.d/boinc-client start
+#to run boinccmd, boinc must run
+sudo nano /etc/group
+#=>boinc:x:XXX:evrosvet
+sudo chmod -R a+rwx /var/lib/boinc-client
+boinccmd --lookup_account http://setiathome.berkeley.edu vasily122@yandex.ru PASSWORD
+#KEY
+boinccmd --project_attach http://setiathome.berkeley.edu KEY
+boinccmd --get_state
+sudo /etc/init.d/boinc-client stop
+sudo /usr/bin/boinc --dir /var/lib/boinc-client 
