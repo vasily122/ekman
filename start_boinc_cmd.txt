@@ -11,3 +11,19 @@ boinccmd --project_attach http://setiathome.berkeley.edu KEY
 boinccmd --get_state
 sudo /etc/init.d/boinc-client stop
 sudo /usr/bin/boinc --dir /var/lib/boinc-client 
+====================
+sudo usermod -a -G video boinc
+
+( this adds the unprivalidged boinc account to the video group )
+
+sudo update-rc.d -f boinc-client remove
+sudo update-rc.d boinc-client defaults 99
+
+( move BOINC start-up to the end of start-up processing )
+
+sudo apt-get install nvidia-modprobe
+sudo modprobe nvidia_uvm
+
+( without nvidia-modprobe installed boinc will not find the GPU )
+
+sudo service boinc-client restart
