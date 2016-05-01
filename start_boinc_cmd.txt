@@ -27,3 +27,10 @@ sudo modprobe nvidia_uvm
 ( without nvidia-modprobe installed boinc will not find the GPU )
 
 sudo service boinc-client restart
+===================================
+sudo ln -s /etc/boinc-client/gui_rpc_auth.cfg /home/<username>/gui_rpc_auth.cfg
+sudo ln -s /etc/boinc-client/gui_rpc_auth.cfg /var/lib/boinc-client/gui_rpc_auth.cfg
+sudo chown boinc:boinc /home/<username>/gui_rpc_auth.cfg
+sudo chown boinc:boinc /var/lib/boinc-client/gui_rpc_auth.cfg
+sudo chmod g+rw /var/lib/boinc-client
+sudo chmod g+rw /var/lib/boinc-client/*.*
