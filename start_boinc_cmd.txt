@@ -34,3 +34,5 @@ sudo chown boinc:boinc /home/<username>/gui_rpc_auth.cfg
 sudo chown boinc:boinc /var/lib/boinc-client/gui_rpc_auth.cfg
 sudo chmod g+rw /var/lib/boinc-client
 sudo chmod g+rw /var/lib/boinc-client/*.*
+
+http://milkyway.cs.rpi.edu/milkyway/
