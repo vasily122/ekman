@@ -6,6 +6,8 @@ sudo nano /etc/group
 #=>boinc:x:XXX:evrosvet
 sudo chmod -R a+rwx /var/lib/boinc-client
 boinccmd --lookup_account http://setiathome.berkeley.edu vasily122@yandex.ru PASSWORD
+#http://milkyway.cs.rpi.edu/milkyway/
+#http://boinc.bakerlab.org/rosetta/
 #KEY
 boinccmd --project_attach http://setiathome.berkeley.edu KEY
 boinccmd --get_state
@@ -34,5 +36,3 @@ sudo chown boinc:boinc /home/<username>/gui_rpc_auth.cfg
 sudo chown boinc:boinc /var/lib/boinc-client/gui_rpc_auth.cfg
 sudo chmod g+rw /var/lib/boinc-client
 sudo chmod g+rw /var/lib/boinc-client/*.*
-
-http://milkyway.cs.rpi.edu/milkyway/
