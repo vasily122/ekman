@@ -78,3 +78,22 @@ sudo apt-get install conky-all lm-sensors hddtemp
 sudo aptitude install boinc-client boinc-manager 
 
 sudo sed -i "s/enabled=1/enabled=0/g" '/etc/default/apport'
+=====================2016 may 10======================================
+https://romantelychko.com/blog/10/===========
+sudo apt-get install \
+aptitude pidgin rar unrar p7zip safe-rm sshfs pwgen imagemagick msttcorefonts
+sqlite3 mc openssh-server tmux screen htop atop meld cabextract gthumb fdupes mplayer vlc
+samba skype chromium-browser easytag audacious audacity
+flashplugin-installer rsync nautilus pcmanfm gedit guake
+libreoffice usb-creator-gtk gparted 
+ 
+xfce4-goodies mtpfs
+python-mutagen sensors-applet libnotify-bin acpi
+ 
+php5 php5-cli php5-fpm php5-common php5-curl php5-dev
+php5-gd php5-imagick php5-json php5-mcrypt php5-mhash php5-mysql 
+php5-pgsql php5-sqlite php-apc
+ 
+mysql-server phpmyadmin
+postgresql postgresql-contrib pgadmin3
+sudo apt-get remove abiword gnumeric
