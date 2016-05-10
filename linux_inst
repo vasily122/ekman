@@ -97,3 +97,13 @@ php5-pgsql php5-sqlite php-apc
 mysql-server phpmyadmin
 postgresql postgresql-contrib pgadmin3
 sudo apt-get remove abiword gnumeric
+
+sudo apt-get install ccze
+Смотирим так
+cat /var/log/syslog | ccze -A
+Или так (экспорт в HTML)
+ccze -h < /var/log/syslog > ~/syslog.html
+
+sudo apt-get install fdupes
+Ищём и удаляем 
+fdupes -r -d -N /path/to/dir
